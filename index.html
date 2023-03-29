@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoogleKeep</title>
+
+    <!-- Link to the Bootstrap Icons CSS library -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+
+    <!-- Link to your own custom CSS file -->
+    <link rel="stylesheet" href="myApp.css">
+</head>
+
+<body>
+    <!-- The header section of your app -->
+    <header>
+        <!-- The title of your app -->
+        <h1>Google Keep</h1>
+
+        <!-- The container for the search bar -->
+        <div id="search-container">
+            <!-- The search icon from the Bootstrap Icons library -->
+            <i class="bi bi-search"></i>
+
+            <!-- The input field for the search bar -->
+            <input type="text" id="search-input" placeholder="Search Your Text here....">
+        </div>
+
+        <!-- The button to export notes as a PDF -->
+        <button id="export-notes">
+            Export PDF <i class="bi bi-download"></i>
+        </button>
+    </header>
+
+    <!-- The container for adding a new note -->
+    <div id="add-note-container">
+        <!-- The input field for adding a new note -->
+        <input type="text" id="note-content" placeholder="Add Your Notes Here....">
+
+        <!-- The button to add a new note -->
+        <button class="add-note"><i class="bi bi-plus-lg"></i></button>
+    </div>
+
+    <!-- The container for displaying all the notes -->
+    <div id="notes-container"></div>
+
+    <!-- The script file that contains the JavaScript code for your app -->
+    <script src="js.js" defer></script>
+</body>
+</html>
